@@ -1,0 +1,35 @@
+===================================
+QUICK START GUIDE - EV CHASSIS MATERIAL SELECTION
+===================================
+
+1. REQUIREMENTS:
+   - Python 3.6 or higher
+   - Required packages:
+     numpy, pandas, matplotlib, scikit-learn, seaborn, xgboost, graphviz
+
+2. INSTALLATION:
+   Run this command to install all required packages:
+   
+   pip install numpy pandas matplotlib scikit-learn seaborn xgboost graphviz
+
+3. RUNNING THE SCRIPT:
+   Ensure 'material.csv' is in the same directory as the script, then run:
+   
+   python ev_chassis_material_selection.py
+
+4. UNDERSTANDING THE RESULTS:
+   - The script will display the accuracy of different models
+   - Visual outputs will be saved to the current directory
+   - The script will conclude with an example material prediction
+   - Decision Tree and Random Forest models typically give the highest accuracy
+
+5. FILES DESCRIPTION:
+   - ev_chassis_material_selection.py: Main Python script
+   - material.csv: Dataset with material properties
+   - model_comparison.png: Generated image comparing model performance
+   - decision_tree.png: Visualization of decision tree model
+   - confusion_matrix_*.png: Confusion matrices for different models
+
+6. FOR HELP:
+   For detailed information, see README_python_script.md or refer
+   to the comments in ev_chassis_material_selection.py 

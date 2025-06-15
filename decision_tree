@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Su <= 506.5\ngini = 0.16\nsamples = 1241\nvalue = [1132, 109]\nclass = Not Suitable", fillcolor="#e88d4c"] ;
+1 [label="Sy <= 252.5\ngini = 0.29\nsamples = 619\nvalue = [510, 109]\nclass = Not Suitable", fillcolor="#eb9c63"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 425\nvalue = [425, 0]\nclass = Not Suitable", fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label="E <= 184000.0\ngini = 0.492\nsamples = 194\nvalue = [85, 109]\nclass = Suitable", fillcolor="#d3e9f9"] ;
+1 -> 3 ;
+4 [label="gini = 0.0\nsamples = 80\nvalue = [80, 0]\nclass = Not Suitable", fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label="G <= 82500.0\ngini = 0.084\nsamples = 114\nvalue = [5, 109]\nclass = Suitable", fillcolor="#42a1e6"] ;
+3 -> 5 ;
+6 [label="Su <= 325.0\ngini = 0.035\nsamples = 111\nvalue = [2, 109]\nclass = Suitable", fillcolor="#3d9fe5"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Not Suitable", fillcolor="#e58139"] ;
+6 -> 7 ;
+8 [label="Sy <= 383.5\ngini = 0.018\nsamples = 110\nvalue = [1, 109]\nclass = Suitable", fillcolor="#3b9ee5"] ;
+6 -> 8 ;
+9 [label="gini = 0.0\nsamples = 109\nvalue = [0, 109]\nclass = Suitable", fillcolor="#399de5"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Not Suitable", fillcolor="#e58139"] ;
+8 -> 10 ;
+11 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = Not Suitable", fillcolor="#e58139"] ;
+5 -> 11 ;
+12 [label="gini = 0.0\nsamples = 622\nvalue = [622, 0]\nclass = Not Suitable", fillcolor="#e58139"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
